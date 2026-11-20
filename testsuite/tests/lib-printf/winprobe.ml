@@ -8,6 +8,7 @@
 (* Temporary probe for #15272 on Windows CI; not part of the PR. *)
 
 external crt : unit -> string = "winprobe_crt"
+external vsnprintf_l : unit -> string = "winprobe_vsnprintf_l"
 external format_float : string -> float -> string = "caml_format_float"
 external format_int : string -> int -> string = "caml_format_int"
 
@@ -20,6 +21,7 @@ let show name f =
 
 let () =
   Printf.printf "crt: %s\n%!" (crt ());
+  Printf.printf "config: %s\n%!" (vsnprintf_l ());
   show "format_float precision (floats.c)"
     (fun () -> format_float "%.4611686018427387903f" 1.0);
   show "format_int precision (str.c)"

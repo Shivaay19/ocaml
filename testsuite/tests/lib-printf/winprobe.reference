@@ -1,5 +1,6 @@
-crt: _UCRT not defined
+crt: _UCRT defined
+config: HAS_VSNPRINTF_L not defined
 format_float precision (floats.c): Out of memory
-format_int precision (str.c): ok, length 1, tag 252
+format_int precision (str.c): Out of memory
 format_int width (str.c): Out of memory
 control: ok, length 202, tag 252
