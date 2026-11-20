@@ -1,6 +1,5 @@
 (* TEST
  arch64;
- not windows;
  bytecode;
  native;
 *)

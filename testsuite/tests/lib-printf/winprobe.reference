@@ -1,0 +1,5 @@
+crt: _UCRT not defined
+format_float precision (floats.c): Out of memory
+format_int precision (str.c): ok, length 1, tag 252
+format_int width (str.c): Out of memory
+control: ok, length 202, tag 252
